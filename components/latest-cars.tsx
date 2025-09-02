@@ -55,7 +55,7 @@ export async function LatestCars() {
             </p>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-orange-400 font-semibold">${car.pricePerDay}/day</span>
+            <span className="text-orange-400 font-semibold">₹{car.pricePerDay}/day</span>
             <span className="inline-flex items-center rounded-md bg-orange-600 px-3 py-1 text-xs font-medium text-white group-hover:bg-orange-700 transition-colors">
               View
             </span>

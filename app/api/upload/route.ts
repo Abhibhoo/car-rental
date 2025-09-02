@@ -34,7 +34,6 @@ export async function POST(req: NextRequest) {
       Bucket: BUCKET,
       Key: key,
       ContentType: contentType,
-      ACL: "public-read", // ensure public accessibility for direct view links
     })
 
     const url = await getSignedUrl(s3, putCommand, { expiresIn: 60 })
